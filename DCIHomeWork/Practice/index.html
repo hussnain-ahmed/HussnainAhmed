@@ -4,14 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Website</title>
+    <style>
+        ol {
+            display: block;
+            list-style-type: decimal;
+            margin: 1rem 1rem;
+            padding: 40px;
+        }
+        ul {
+
+            display: block;
+            list-style-type: disc;
+            margin: 1rem 0rem;
+            padding-left: 40px;
+            line-height: normal;
+        }
+        ol .a {
+            list-style-type: georgian;
+        }
+
+        ol .b {
+            list-style-type: armenian;
+        }
+
+        ol .c {
+            list-style-type: lower-greek;
+        } 
+    </style>
 </head>
 <body>
-    <h1>Hallo Welt</h1>
-    <h2>Hi</h2>
-    <h3>Tschuss</h3>
-    <h4>Auf Wiedersehen</h4>
-    <h5>Chao</h5>
-    <h6>Gulay Gulay</h6>
-    <p><b>Lorem ipsum</b>,<i> dolor</i> sit amet consectetur adipisicing elit. Quo repudiandae ipsam, quasi perspiciatis nam temporibus laboriosam natus, voluptatibus voluptatem aspernatur tempore eaque consectetur, <strong> eligendi porro!</strong> Obcaecati nostrum <em>quaerat</em> ad iure.</p>
+    <ul>
+        <li> Banana
+            <ul style="list-style-type:circle; line-height: 400%;">
+                <li>Pakistani</li>
+                <ul>
+                    <li>Lahori</li>
+                    <li>Multani</li>
+                </ul>
+                <li>German</li>
+            </ul>
+        </li>
+        <li> Mango
+            <ul style="list-style-type: disc; line-height: 300%;">
+                <li>
+                    Pakistani
+                </li>
+                     <img src="https://lh3.googleusercontent.com/proxy/DesEKjM-rXbNMC5t-mKb5yWcj3P0cKMt6TLBshWOws-JCgiuqFchvPfFnZ_1fC6LQwOmtY8MyzD5BO2qaLWPLa7k3KNZ_ShMEDo9AU_Kz4z4VEVr0cvpCml9YaOTvfk" alt="" width="60" height="40">
+                <li>
+                    Indian
+                </li>
+                <img src="https://www.americanbazaaronline.com/wp-content/uploads/2019/04/Indian-mangoes-in-the-US.jpg" alt="" width="60" height="40">
+                <li>
+                    German
+                </li>
+            </ul>
+        </li>
+        <li> Apple
+            <ul style="list-style-type: square; line-height: 200%;">
+                <li>
+                    Pakistani
+                </li>
+                <li>
+                    Indian
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ol>
+        <li> Banana
+            <ol class="a">
+                <li>Pakistani</li>
+                <li>German</li>
+            </ol>
+        </li>
+        <li> Mango
+            <ol class="b">
+                <li>
+                    Pakistani
+                </li>
+                <li>
+                    Indian
+                </li>
+                <li>
+                    German
+                </li>
+            </ol>
+        </li>
+        <li style="list-style-type:upper-roman;">Apple
+            <ol class="c">
+                <li>
+                    Pakistani
+                </li>
+                <li>
+                    Indian
+                </li>
+            </ol>
+        </li>
+    </ol>
 </body>
 </html>

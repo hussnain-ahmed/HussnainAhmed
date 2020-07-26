@@ -5,8 +5,8 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background: black;
-    color: whitesmoke;
+    background: whitesmoke;
+    color: black;
     line-height: 1.6;
     height: 100vh;
     overflow: hidden;
@@ -79,19 +79,22 @@ section p {
 }
 
 section#home {
-    background: url('kashmir.jpg') no-repeat center center/cover;
+    background: url('home.png') no-repeat center center/cover;
 }
 
 section#aboutme {
-    background: url('karachi.jpg') no-repeat center center/cover;
-}
-
-section#contact {
-    background: url('multan.jpg') no-repeat center center/cover;
+    background: url('aboutme.jpg') no-repeat center center/cover;
+    color: white;
 }
 
 section#services {
-    background: url('peshawar.jpg') no-repeat center center/cover;
+    background: url('services.jpg') no-repeat center center/cover;
+    color: yellow;
+}
+
+section#contact {
+    background: url('contact.jpg') no-repeat center center/cover;
+    color: tomato;
 }
 
 section#copyrigth {
