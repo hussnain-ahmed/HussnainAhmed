@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <div>
+            <fieldset>
+                <legend>Personal information</legend>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Please enter your first name here" required><br><br>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Please enter yout last name here"><br><br>
+                    Gender:
+                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="male">Male</label> 
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>  
+                        <input type="radio" name="gender" id="others" value="others">
+                        <label for="others">Others</label> <br> <br>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="18" max="60"> <br>
+            </fieldset>
+        </div>
+        <div>
+            <br>
+            <fieldset>
+                <legend>For registration</legend>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="Place enter your email address here" required><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Please enter a minimum of 6 digits password here" minlength="6" maxlength="16" required><br>
+            </fieldset>
+        </div>
+
+        <div>
+            <br>
+            <button type="submit" name="submit" id="submit">Submit</button>
+            <button type="reset" name="reset" id="reset">Reset</button>
+            <br><br>
+        </div>
+    </form>
+</body>
+</html>

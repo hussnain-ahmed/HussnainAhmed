@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/submit" method="POST">
+        <div>
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Please enter your first name here"
+                    required><br><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Please enter yout last name here"><br><br>
+                Gender:
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="others" value="others">
+                <label for="others">Others</label> <br> <br>
+                <label for="birthday">Date of birthday:</label>
+                <input type="date" name="birthday" id="birthday" min="2002-01-01"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="18" max="60"> <br><br>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="pakistan" selected>Pakistan</option>
+                    <option value="germany">Germany</option>
+                    <option value="uk">UK</option>
+                    <option value="Poland">Poland</option>
+                    <option value="France">France</option>
+                </select><br><br>
+                <label for="telephone">Telephone number:</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="0-1-76-56742648"
+                    pattern="[0]{1}-[1]{1}-[5-9]{2}-[0-9]{8}"><br><br>
+                <label for="linkfacebookurl">Link your Facebook account:</label>
+                <input type="url" name="linkfacebookurl" id="linkfacebookurl"><br><br>
+            </fieldset>
+        </div>
+
+        <div>
+            <br>
+            <fieldset>
+                <legend>For registration</legend>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Place enter your email address here"
+                    required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"
+                    placeholder="Please enter a minimum of 6 digits password here" minlength="6" maxlength="16"
+                    required><br>
+            </fieldset>
+        </div>
+
+        <div>
+            <br>
+            <fieldset>
+                <legend>Room</legend>
+                <label for="searchforaroom">Search for a room</label>
+                <input type="search" name="searchforaroom" id="searchforaroom"><br><br>
+                Room Type:
+                <input list="room" name="room">
+                <datalist id="room">
+                    <option value="Single"></option>
+                    <option value="Double"></option>
+                    <option value="Family"></option>
+                </datalist><br><br>
+                <label for="checkmonth">First check for available room in a specific month:</label>
+                <input type="month" name="checkmonth" id="checkmonth" min="2020-08"><br><br>
+                <label for="time">First check for available room in a specific time:</label>
+                <input type="time" name="time" id="this"><br><br>
+                <label for="roomavailable">Room Available(Time & Date):</label>
+                <input type="datetime-local" name="roomavailable" id="roomavailable" min="2020-07-31"><br>
+            </fieldset>
+        </div>
+
+        <div>
+            <br>
+            <fieldset>
+                <legend>Document type for registration</legend>
+                <input type="checkbox" name="idcard" id="idcard" checked>
+                <label for="idcard">ID Card</label>
+                <input type="checkbox" name="passport" id="passport">
+                <label for="passport">Passport</label>
+                <input type="checkbox" name="drivinglicence" id="drivinflicence">
+                <label for="drivinflicence">Driving Licence</label>
+                <br><br>
+                <label for="photo">Upload your Photo</label>
+                <input type="file" name="photo" id="photo">
+            </fieldset>
+        </div>
+
+        <div>
+            <br>
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="message">Your Feedback</label>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Send us your valuable feedback"></textarea> <br><br>
+                <label for="rating">Rating</label>
+                <input type="range" name="rating" id="rating" min="0" min="100"> <br><br>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" name="favcolor" id="favcolor"><br><br>
+                <label for="luckydraw">Lucky Draw (Choice a number between 10 to 100):</label>
+                <input type="number" name="luckydraw" id="luckydraw" min="10" max="100" step="10" value="30"><br>
+            </fieldset>
+        </div>
+
+        <div>
+            <br>
+            <button type="submit" name="submit" id="submit">Submit</button>
+            <button type="reset" name="reset" id="reset">Reset</button>
+            <button type="button" name="reset" id="button">Button</button>
+            <br><br>
+        </div>
+    </form>
+</body>
+
+</html>
